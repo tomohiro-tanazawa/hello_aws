@@ -86,7 +86,6 @@ GEM
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    hashie (5.0.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
@@ -109,25 +108,12 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.4-x86_64-linux)
       racc (~> 1.4)
-    oauth (0.5.8)
-    omniauth (2.1.0)
-      hashie (>= 3.4.6)
-      rack (>= 2.2.3)
-      rack-protection
-    omniauth-oauth (1.2.0)
-      oauth
-      omniauth (>= 1.0, < 3)
-    omniauth-twitter (1.4.0)
-      omniauth-oauth (~> 1.1)
-      rack
     orm_adapter (0.5.0)
     public_suffix (4.0.7)
     puma (4.3.6)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
-    rack-protection (2.2.0)
-      rack
     rack-proxy (0.7.2)
       rack
     rack-test (1.1.0)
@@ -234,7 +220,6 @@ DEPENDENCIES
   jbuilder (= 2.9.1)
   listen (= 3.1.5)
   mysql2 (>= 0.4.4)
-  omniauth-twitter
   puma (= 4.3.6)
   rails (= 6.0.4)
   sass-rails (= 5.1.0)

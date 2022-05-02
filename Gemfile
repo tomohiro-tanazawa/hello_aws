@@ -10,7 +10,6 @@ gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.10.3', require: false
 # Devise
 gem 'devise'
-gem 'omniauth-twitter'
 
 group :development, :test do
   gem 'mysql2', '>= 0.4.4'
