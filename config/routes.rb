@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-   root 'tweets#index' 
+    root 'tweets#index' 
   
     devise_for :users
     
@@ -7,5 +7,9 @@ Rails.application.routes.draw do
       resource :favorites, only: [:create, :destroy]
       resource :comments, only: [:create, :destroy]
     end
-    resources :users
+    resources :users do
+      resource :relationships, only: [:create, :destroy]
+        get :follows, on: :member # 追加
+        get :followers, on: :member # 追加
+    end
 end
